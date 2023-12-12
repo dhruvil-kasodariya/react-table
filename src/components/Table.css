@@ -1,0 +1,72 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th ,tfoot td{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* Pagination Container */
+div.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Page Information and Go to Page Input */
+div.pagination-container span {
+  margin-right: 10px;
+}
+
+/* Input for Go to Page */
+div.pagination-container input {
+  width: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Page Size Dropdown */
+div.pagination-container select {
+  margin-left: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Navigation Buttons */
+div.pagination-container button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+/* Disabled Navigation Buttons */
+div.pagination-container button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Active Page Highlight */
+div.pagination-container button.active {
+  background-color: #2c3e50;
+}
